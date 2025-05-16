@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern School</title>
+  <style>
+    .content {
+      display: none;
+      margin: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    label {
+      padding: 10px 15px;
+      background-color: #003366;
+      color: white;
+      margin: 5px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    #home:checked ~ #homeSection,
+    #about:checked ~ #aboutSection,
+    #academics:checked ~ #academicsSection,
+    #events:checked ~ #eventsSection,
+    #location:checked ~ #locationSection,
+    #success:checked ~ #successSection {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Modern School</h1>
+
+  <!-- Radio Buttons (Navigation) -->
+  <input type="radio" name="nav" id="home" checked>
+  <input type="radio" name="nav" id="about">
+  <input type="radio" name="nav" id="academics">
+  <input type="radio" name="nav" id="events">
+  <input type="radio" name="nav" id="location">
+  <input type="radio" name="nav" id="success">
+
+  <!-- Labels as Buttons -->
+  <nav>
+    <label for="home">Home</label>
+    <label for="about">About</label>
+    <label for="academics">Academics</label>
+    <label for="events">Events</label>
+    <label for="location">Location</label>
+    <label for="success">Success</label>
+  </nav>
+
+  <!-- Content Sections -->
+  <div id="homeSection" class="content">
+    <h2>Home</h2>
+    <p>Welcome to Modern School. We provide quality education for young minds to grow.</p>
+  </div>
+
+  <div id="aboutSection" class="content">
+    <h2>About Us</h2>
+    <p>Modern School was founded in 1990 with a vision to shape future leaders through excellence in education.</p>
+  </div>
+
+  <div id="academicsSection" class="content">
+    <h2>Academics</h2>
+    <ul>
+      <li>Mathematics</li>
+      <li>Science</li>
+      <li>English</li>
+      <li>Social Studies</li>
+      <li>Computer Science</li>
+    </ul>
+  </div>
+
+  <div id="eventsSection" class="content">
+    <h2>Events & Success</h2>
+    <ul>
+      <li>Annual Day</li>
+      <li>Science Exhibition</li>
+      <li>Sports Meet</li>
+    </ul>
+    <p>Our students have achieved top ranks and won various competitions.</p>
+  </div>
+
+  <div id="locationSection" class="content">
+    <h2>Location</h2>
+    <p>Modern School, Main Street, Anantapur, PIN - 123456</p>
+  </div>
+
+  <div id="successSection" class="content">
+    <h2>Success Stories</h2>
+    <p>Our students have consistently ranked at the top in board exams and inter-school competitions. We also have many students excelling in sports and extracurricular activities, making us proud every year!</p>
+  </div>
+
+</body>
+</html>
